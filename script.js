@@ -20,25 +20,17 @@ steps.forEach((step) => {
   const prevBtn = step.querySelector(".prev-stp");
 
   if (prevBtn) {
-    prevBtn.addEventListener(
-      "click",
-      () => {
-        toggleStep("none", -1);
-      },
-      { once: true }
-    );
+    prevBtn.addEventListener("click", () => {
+      toggleStep("flex", -1);
+    });
   }
 
-  nextBtn.addEventListener(
-    "click",
-    () => {
-      if (currentStep < 5 && validateForm()) {
-        toggleStep("flex", 1);
-        setTotal();
-      }
-    },
-    { once: true }
-  );
+  nextBtn.addEventListener("click", () => {
+    if (currentStep < 5 && validateForm()) {
+      toggleStep("flex", 1);
+      setTotal();
+    }
+  });
 });
 
 function toggleStep(display, stepChange) {
