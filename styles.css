@@ -439,7 +439,6 @@ form .error {
     color: var(--Purplish-blue);
 }
 
-/* STEP 4 */
 .step-4 {
     display: none;
     width: 80%;
@@ -510,7 +509,6 @@ form .error {
     display: none;
 }
 
-/* SWITCH classes */
 .switcher {
     background-color: var(--Magnolia);
     display: flex;
